@@ -7,7 +7,7 @@ Currently setup for macOS, will do other platforms later. Assumes you have Proce
 
 - Open this repository in Intellij IDEA
 - Wait for Gradle to download its things
-- Run the Gralde task `runProcessing`
+- Run the Gradle task `runProcessing`
   - This will install the library in `~/Documents/Processing/Modes/p5js`
   - This will run a funky version of Processing
 
