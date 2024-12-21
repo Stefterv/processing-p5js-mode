@@ -22,6 +22,11 @@ _Screenshot of the proof of concept, featuring a sketch by Guilherme Vieira._
 - Start and stop from the editor (in poc)
 - Launch devtools from button in the editor
 - Toggle to enable/disable hot-reload
+- Proper editor support  (ideally the p5.js web editors React Component)
+  - Syntax highlighting
+  - Auto-complete
+  - Error highlighting
+  - etc...
 - Download npm packages (and other package repos) with UI
 - Export p5 sketches to standalone apps
 - Typescript support for sketches
