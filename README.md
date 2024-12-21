@@ -20,7 +20,6 @@ Currently setup for macOS, will do other platforms later. Assumes you have Proce
 - Toggle to enable/disable hot-reload
 - Download npm packages (and other package repos) with UI
 - Typescript support for sketches
-- Architecture: I'd like to have all our custom JS functionality to also be a proper JS project setup within this repo, not like I did it in the POC with some .js and .html files embedded as strings in the code.
 - Export p5 sketches to standalone apps
 
 ### Known issues in POC
@@ -34,6 +33,7 @@ Currently setup for macOS, will do other platforms later. Assumes you have Proce
 
 ### Technical challenges
 - For optimal support we should connect a Java based JS debugger to the electron app
+- I'd like to have all our custom JS functionality to also be a proper JS project setup within this repo, not like I did it in the POC with some .js and .html files embedded as strings in the code.
 - Not having a node_modules folder per sketch would be awesome
 - Including new functionality into p5 related to the electron bases
   - e.g Overwiting `createCanvas` to send a signal to electron to resize the window to the newly defined size.
