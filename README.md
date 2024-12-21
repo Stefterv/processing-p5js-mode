@@ -1,6 +1,6 @@
 # Processing P5 JS mode
 
-I'd like to build a p5.js mode for Processing based around electron. This will have the effect that p5.js sketches can be run with local desktop persmissions. The ultimate goal of this mode is to make p5.js a first class citizen of Processing. 
+I'd like to build a p5.js mode for the Processing editor based around Electron. This will allow p5.js sketches to run with local desktop permissions, including access to the file system, integration with Node.js modules, and the ability to create standalone desktop apps. The ultimate goal of this mode is to make p5.js a first class citizen within the Processing Development Environment (PDE).
 
 ## Running the POC
 Currently setup for macOS, will do other platforms later. Assumes you have Processing installed in `/Applications/Processing.app`
@@ -8,10 +8,13 @@ Currently setup for macOS, will do other platforms later. Assumes you have Proce
 - Open this repository in Intellij IDEA
 - Goto File->Project Structure->Project Settings->Project and set the SDK to terumin-17
 - Wait for Gradle to download its things
-- Run the Gralde task `runProcessing`
+- Run the Gradle task `runProcessing`
   - This will install the library in `~/Documents/Processing/Modes/p5js`
   - This will run a funky version of Processing
 
+![A screenshot of a proof of concept for an Electron-based p5.js mode in Processing, featuring a code editor on the left and a sketch window showing a colorful geometric pattern generated with p5.js on the right (Padrão Geométrico by Guilherme Vieira)](.github/assets/p5-pde-poc.png)
+
+_Screenshot of the proof of concept, featuring a sketch by Guilherme Vieira._
 
 ### Ideal functionality (in order of importance)
 - Wrap p5.js sketches in Electron (in poc)
