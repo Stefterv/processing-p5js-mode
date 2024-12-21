@@ -11,6 +11,9 @@ Currently setup for macOS, will do other platforms later. Assumes you have Proce
   - This will install the library in `~/Documents/Processing/Modes/p5js`
   - This will run a funky version of Processing
 
+![A screenshot of a proof of concept for an Electron-based p5.js mode in Processing, featuring a code editor on the left and a sketch window showing a colorful geometric pattern generated with p5.js on the right (Padrão Geométrico by Guilherme Vieira)](.github/assets/p5-pde-poc.png)
+
+_Screenshot of the proof of concept, featuring a sketch by Guilherme Vieira._
 
 ### Ideal functionality (in order of importance)
 - Wrap p5.js sketches in Electron (in poc)
