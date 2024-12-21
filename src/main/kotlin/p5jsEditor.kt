@@ -1,16 +1,22 @@
 package processing.p5js
 
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import processing.app.Base
 import processing.app.Formatter
 import processing.app.Mode
+import processing.app.syntax.JEditTextArea
+import processing.app.syntax.PdeInputHandler
+import processing.app.syntax.PdeTextArea
+import processing.app.syntax.PdeTextAreaDefaults
 import processing.app.ui.Editor
 import processing.app.ui.EditorState
 import processing.app.ui.EditorToolbar
-import javax.swing.JMenu
-import kotlinx.coroutines.*
 import java.io.BufferedReader
 import java.io.File
 import java.io.InputStreamReader
+import javax.swing.JMenu
 
 class p5jsEditor(base: Base, path: String?, state: EditorState?, mode: Mode?): Editor(base, path, state, mode) {
 
@@ -95,6 +101,11 @@ class p5jsEditor(base: Base, path: String?, state: EditorState?, mode: Mode?): E
             File("$folder/index.js").writeText(indexJS)
         }
     }
+
+    override fun createTextArea(): JEditTextArea {
+        return PdeTextArea(PdeTextAreaDefaults(), p5jsInputHandler(this), this)
+    }
+
     override fun createToolbar(): EditorToolbar {
         return p5jsEditorToolbar(this)
     }
@@ -124,7 +135,7 @@ class p5jsEditor(base: Base, path: String?, state: EditorState?, mode: Mode?): E
     }
 
     override fun getCommentPrefix(): String {
-        return "//"
+        return "// "
     }
 
     override fun internalCloseRunner() {

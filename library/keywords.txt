@@ -193,6 +193,7 @@ continue	KEYWORD1	continue
 default	KEYWORD1	default
 enum	KEYWORD1
 extends	KEYWORD1	extends
+function KEYWORD1
 false	KEYWORD1	false
 final	KEYWORD1	final
 finally	KEYWORD1
@@ -200,6 +201,8 @@ implements	KEYWORD1	implements
 import	KEYWORD1	import
 instanceof	KEYWORD1
 interface	KEYWORD1
+let KEYWORD1
+const KEYWORD1
 native	KEYWORD1
 new	KEYWORD1	new
 null	KEYWORD1	null
@@ -447,6 +450,7 @@ curvePoint	FUNCTION1	curvePoint_
 curveTangent	FUNCTION1	curveTangent_
 curveTightness	FUNCTION1	curveTightness_
 curveVertex	FUNCTION1	curveVertex_
+createCanvas	FUNCTION1	createCanvas_
 day	FUNCTION1	day_
 degrees	FUNCTION1	degrees_
 delay	FUNCTION1	delay_
