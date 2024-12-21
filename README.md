@@ -19,8 +19,9 @@ Currently setup for macOS, will do other platforms later. Assumes you have Proce
 - Launch devtools from button in the editor
 - Toggle to enable/disable hot-reload
 - Download npm packages (and other package repos) with UI
-- Typescript support for sketches
 - Export p5 sketches to standalone apps
+- Typescript support for sketches
+
 
 ### Known issues in POC
 - Run button does not acturately reflect state of running app
@@ -46,6 +47,7 @@ Currently setup for macOS, will do other platforms later. Assumes you have Proce
 ### Future plans
 - iOS wrapper
 - Android wrapper
+
 This technique of wrapping a p5.js sketch in a runner (e.g. in the poc, `electron`) can also be applied to other platforms such as iOS and Android, providing a simple way for people to install their sketches as iOS and Android apps.
 - Export as GitHub ready
   - Include automated actions to compile the sketch to native apps
