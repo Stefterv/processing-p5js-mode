@@ -51,7 +51,7 @@ tasks.register<JavaExec>("runProcessing") {
     mainClass.set("processing.app.Base")  // Your main class
 
     // Optional: Add arguments if needed
-    args = listOf("${System.getProperty("user.home")}/Downloads/radial_manuscript")
+    args = listOf("")
 
     // Optional: Add JVM arguments if needed
     jvmArgs = listOf("-Xmx2g")
