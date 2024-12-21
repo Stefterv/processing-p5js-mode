@@ -35,6 +35,8 @@ Currently setup for macOS, will do other platforms later. Assumes you have Proce
 - For optimal support we should connect a Java based JS debugger to the electron app
 - I'd like to have all our custom JS functionality to also be a proper JS project setup within this repo, not like I did it in the POC with some .js and .html files embedded as strings in the code.
 - Not having a node_modules folder per sketch would be awesome
+  - My current thinking is that we could have a single node_modules setup in the sketchbook, electron would be run from there and also that's where any installed npm packages would be installed to.
+  - I thought of installing everything in `global` namespace but I think that will cause issues and also be a little bit insecure.
 - Including new functionality into p5 related to the electron bases
   - e.g Overwiting `createCanvas` to send a signal to electron to resize the window to the newly defined size.
  
