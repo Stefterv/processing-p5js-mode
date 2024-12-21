@@ -6,6 +6,7 @@ I'd like to build a p5.js mode for Processing based around electron. This will h
 Currently setup for macOS, will do other platforms later. Assumes you have Processing installed in `/Applications/Processing.app`
 
 - Open this repository in Intellij IDEA
+- Goto File->Project Structure->Project Settings->Project and set the SDK to terumin-17
 - Wait for Gradle to download its things
 - Run the Gralde task `runProcessing`
   - This will install the library in `~/Documents/Processing/Modes/p5js`
