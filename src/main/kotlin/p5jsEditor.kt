@@ -153,8 +153,12 @@ class p5jsEditor(base: Base, path: String?, state: EditorState?, mode: Mode?): E
 
     val processes = mutableListOf<Process>()
     fun runNpmActions(directory: File, type: TYPE, actions: List<String>, onFinished: () -> Unit = {}) {
-        val processBuilder = ProcessBuilder()
 
+
+        // Wait for previous processes to finish
+        processes.forEach { it.waitFor() }
+
+        val processBuilder = ProcessBuilder()
         // Set the command based on the operating system
         val command = if (System.getProperty("os.name").lowercase().contains("windows")) {
             listOf("cmd", "/c", type.name , *actions.toTypedArray())

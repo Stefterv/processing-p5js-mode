@@ -9,7 +9,8 @@ class p5jsEditorToolbar(editor: p5jsEditor?) : EditorToolbar(editor) {
         val editor = editor as p5jsEditor
 
         editor.scope.launch {
-            editor.processes.forEach { it.destroy() }
+            editor.sketch.currentCode.save()
+
             runButton.setSelected(true)
             editor.runNpmActions(editor.sketch.folder, p5jsEditor.TYPE.npx, listOf("electron", ".")){
                 runButton.setSelected(false)
