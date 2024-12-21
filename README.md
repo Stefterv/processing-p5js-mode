@@ -46,3 +46,8 @@ Currently setup for macOS, will do other platforms later. Assumes you have Proce
 ### Future plans
 - iOS wrapper
 - Android wrapper
+This technique of wrapping a p5.js sketch in a runner (e.g. in the poc, `electron`) can also be applied to other platforms such as iOS and Android, providing a simple way for people to install their sketches as iOS and Android apps.
+- Export as GitHub ready
+  - Include automated actions to compile the sketch to native apps
+  - Include a `package.json`
+  - Remove any Processing file that would intefere
