@@ -1,6 +1,6 @@
 # Processing P5 JS mode
 
-I'd like to build a p5.js mode for Processing based around electron. This will have the effect that p5.js sketches can be run with local desktop permissions. The ultimate goal of this mode is to make p5.js a first class citizen of Processing. 
+I'd like to build a p5.js mode for the Processing editor based around Electron. This will allow p5.js sketches to run with local desktop permissions, including access to the file system, integration with Node.js modules, and the ability to create standalone desktop apps. The ultimate goal of this mode is to make p5.js a first class citizen within the Processing Development Environment (PDE).
 
 ## Running the POC
 Currently setup for macOS, will do other platforms later. Assumes you have Processing installed in `/Applications/Processing.app`
